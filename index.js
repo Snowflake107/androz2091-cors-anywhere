@@ -1,4 +1,4 @@
-const { port } = require('./config.json');
+const port = process.env.PORT || 3000;
 const proxy = require('cors-anywhere');
 proxy.createServer({
     originWhitelist: [],
